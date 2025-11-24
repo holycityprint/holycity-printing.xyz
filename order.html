@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form - Holycity Printing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-up { animation: fadeUp 0.6s ease-out forwards; opacity: 0; }
+        .delay-200 { animation-delay: 0.2s; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="index.html" class="flex items-center gap-3"><img src="IMAGES/LOGO-HOLY.png" class="h-10 w-auto object-contain"><span class="text-xl font-bold text-slate-900">HOLYCITY</span></a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-500 hover:text-slate-900 font-medium text-sm uppercase">Beranda</a>
+                    <a href="order.html" class="bg-slate-900 hover:bg-slate-800 text-white px-6 py-2.5 rounded text-sm font-bold uppercase">Mulai Produksi</a>
+                </div>
+                <div class="md:hidden"><button id="mobile-menu-btn"><i class="fas fa-bars text-2xl"></i></button></div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl"><div class="flex flex-col px-6 py-4 space-y-4"><a href="index.html">Beranda</a><a href="order.html">Order</a></div></div>
+    </nav>
+
+    <div class="pt-32 pb-20 max-w-6xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-10">
+            <div class="lg:w-2/3 bg-white shadow-lg rounded-xl overflow-hidden border border-slate-200 animate-up">
+                <div class="bg-slate-900 px-8 py-6"><h1 class="text-2xl font-bold text-white">Formulir Pemesanan</h1><p class="text-slate-400 text-sm">Isi data untuk mendapatkan estimasi harga resmi.</p></div>
+                <form class="p-8 space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div><label class="block text-xs font-bold text-slate-500 uppercase mb-2">Nama</label><input type="text" id="nama" class="w-full p-3 bg-slate-50 border border-slate-200 rounded focus:border-blue-600 outline-none"></div>
+                        <div><label class="block text-xs font-bold text-slate-500 uppercase mb-2">WhatsApp</label><input type="tel" id="wa" class="w-full p-3 bg-slate-50 border border-slate-200 rounded focus:border-blue-600 outline-none"></div>
+                        <div class="md:col-span-2"><label class="block text-xs font-bold text-slate-500 uppercase mb-2">Layanan</label><select id="produk" onchange="hitungTotal()" class="w-full p-3 bg-slate-50 border border-slate-200 rounded focus:border-blue-600 outline-none cursor-pointer"><option value="0">-- Pilih --</option><option value="85000">Sablon Satuan DTF (Rp 85.000)</option><option value="55000">Sablon Lusinan (Rp 55.000)</option><option value="120000">Jersey Printing (Rp 120.000)</option><option value="150000">Jaket / Hoodie (Rp 150.000)</option><option value="110000">Kemeja PDH (Rp 110.000)</option><option value="25000">Jasa Jahit CMT (Rp 25.000)</option></select></div>
+                        <div><label class="block text-xs font-bold text-slate-500 uppercase mb-2">Qty</label><input type="number" id="qty" value="1" min="1" oninput="hitungTotal()" class="w-full p-3 bg-slate-50 border border-slate-200 rounded focus:border-blue-600 outline-none"></div>
+                        <div><label class="block text-xs font-bold text-slate-500 uppercase mb-2">Warna Kain</label><input type="text" id="warna" class="w-full p-3 bg-slate-50 border border-slate-200 rounded focus:border-blue-600 outline-none"></div>
+                        <div class="md:col-span-2"><label class="block text-xs font-bold text-slate-500 uppercase mb-2">Catatan</label><textarea id="catatan" rows="3" class="w-full p-3 bg-slate-50 border border-slate-200 rounded focus:border-blue-600 outline-none"></textarea></div>
+                    </div>
+                    <div class="flex justify-between items-center pt-6 border-t border-slate-100"><span class="text-slate-500 font-bold text-sm uppercase">Estimasi Total</span><span id="totalHarga" class="text-2xl font-bold text-blue-600">Rp 0</span></div>
+                    <button type="button" onclick="kirimWA()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 rounded uppercase tracking-wider shadow-lg transition transform hover:-translate-y-1">Kirim Pesanan</button>
+                </form>
+            </div>
+            <div class="lg:w-1/3 space-y-6 animate-up delay-200">
+                <div class="bg-white p-6 rounded-xl shadow border border-slate-200">
+                    <h3 class="font-bold text-lg mb-4 text-slate-900">Pembayaran</h3>
+                    <div class="p-4 bg-blue-50 rounded border border-blue-100">
+                        <p class="text-xs text-blue-600 font-bold mb-1">BCA (Bank Central Asia)</p>
+                        <p class="text-xl font-mono font-bold text-slate-900 tracking-wider">1560054595</p>
+                        <p class="text-[10px] text-slate-500 uppercase mt-1 font-bold">Reza Respati Pramaditha</p>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-3 italic">*Harap konfirmasi bukti transfer ke Admin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function hitungTotal() { let hargaSatuan = document.getElementById("produk").value; let qty = document.getElementById("qty").value; let total = hargaSatuan * qty; let formatted = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(total); document.getElementById("totalHarga").innerText = formatted; }
+        function kirimWA() { var nama = document.getElementById("nama").value; var wa = document.getElementById("wa").value; var produkSelect = document.getElementById("produk"); var namaProduk = produkSelect.options[produkSelect.selectedIndex].text; var qty = document.getElementById("qty").value; var warna = document.getElementById("warna").value; var catatan = document.getElementById("catatan").value; var total = document.getElementById("totalHarga").innerText; if(nama === "" || wa === "") { alert("Mohon isi Nama dan No WA"); return; } var pesan = `*ORDER HOLYCITY*%0A%0A👤 ${nama}%0A📱 ${wa}%0A👕 ${namaProduk}%0A🔢 ${qty} pcs%0A🎨 ${warna}%0A📝 ${catatan}%0A💰 *${total}*%0A%0AMohon info rekening.`; window.open(`https://wa.me/6285724922172?text=${pesan}`, '_blank'); }
+        const mobileBtn=document.getElementById('mobile-menu-btn'),mobileMenu=document.getElementById('mobile-menu');mobileBtn.addEventListener('click',()=>{mobileMenu.classList.toggle('hidden')});
+    </script>
+</body>
+</html>
