@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holycity Apparel & Printing - Garmen & Konveksi Bandung</title>
-    <meta name="description" content="Pabrik konveksi dan sablon terpercaya di Bandung. Melayani produksi massal kaos, jersey, jaket, dan seragam kerja dengan standar kualitas ekspor.">
+    
+    <title>Konveksi Bandung & Sablon Kaos Satuan (Sehari Jadi) - Holycity</title>
+    <meta name="description" content="Pusat Konveksi Bandung & Jasa Sablon Kaos Satuan (DTF). Produksi Jersey Printing, Jaket, Kemeja Seragam, dan Kaos Polos. Harga Produsen, Kualitas Distro.">
     
     <link rel="preload" as="image" href="images/Hero-Sablon.jpg">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        /* Animasi Masuk Mewah */
         @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         .animate-up { animation: fadeUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; opacity: 0; }
         .delay-100 { animation-delay: 0.1s; } .delay-200 { animation-delay: 0.2s; } .delay-300 { animation-delay: 0.3s; }
@@ -25,8 +26,8 @@
     <nav class="fixed w-full z-50 top-0 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <a href="index.html" class="flex items-center gap-3 group">
-                    <img src="images/LOGO-HOLY.png" alt="Logo Holycity Garmen" class="h-10 w-auto object-contain group-hover:scale-105 transition">
+                <a href="index.html" class="flex items-center gap-3 group" aria-label="Beranda Holycity Konveksi">
+                    <img src="images/LOGO-HOLY.png" alt="Logo Holycity Konveksi Bandung" class="h-10 w-auto object-contain group-hover:scale-105 transition">
                     <div class="flex flex-col">
                         <span class="text-xl font-extrabold text-slate-900 tracking-tight leading-none">HOLYCITY</span>
                         <span class="text-[10px] font-bold text-blue-600 tracking-widest uppercase">Apparel & Printing</span>
@@ -39,7 +40,7 @@
                     <a href="portfolio.html" class="text-slate-500 hover:text-slate-900 font-medium text-sm uppercase tracking-wide transition">Portofolio</a>
                     <a href="order.html" class="bg-slate-900 hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wide transition shadow-lg hover:shadow-blue-900/20 transform hover:-translate-y-0.5">Mulai Produksi</a>
                 </div>
-                <div class="md:hidden"><button id="mobile-menu-btn" class="text-slate-900 p-2"><i class="fas fa-bars text-2xl"></i></button></div>
+                <div class="md:hidden"><button id="mobile-menu-btn" aria-label="Buka Menu" class="text-slate-900 p-2"><i class="fas fa-bars text-2xl"></i></button></div>
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0">
@@ -55,36 +56,38 @@
 
     <header class="relative h-[700px] flex items-center bg-slate-900 text-white overflow-hidden mt-16">
         <div class="absolute inset-0 z-0">
-            <img src="images/Hero-Sablon.jpg" class="w-full h-full object-cover animate-pulse" alt="Pabrik Konveksi Bandung" style="animation: none;">
+            <img src="images/Hero-Sablon.jpg" class="w-full h-full object-cover" alt="Pabrik Konveksi dan Sablon Bandung" fetchpriority="high">
             <div class="absolute inset-0 hero-overlay"></div>
         </div>
         <div class="relative z-10 max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-8 animate-up">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-900/40 border border-blue-500/30 backdrop-blur-sm">
                     <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-                    <span class="text-xs font-bold text-blue-100 uppercase tracking-widest">Industrial Standard Quality</span>
+                    <span class="text-xs font-bold text-blue-100 uppercase tracking-widest">Pusat Konveksi Bandung</span>
                 </div>
+                
                 <h1 class="text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
-                    Mitra Produksi <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">Garmen Terbaik.</span>
+                    Konveksi & Sablon <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">Premium Bandung.</span>
                 </h1>
+                
                 <p class="text-slate-300 text-lg leading-relaxed max-w-lg border-l-2 border-blue-500 pl-6">
-                    Solusi manufaktur tekstil end-to-end di Bandung. Kami melayani sablon presisi tinggi, sublimasi full-print, dan jahit konveksi kapasitas besar.
+                    Solusi manufaktur tekstil terlengkap. Kami melayani <strong>Sablon Satuan (DTF)</strong>, <strong>Jersey Printing</strong>, hingga <strong>Jasa Jahit Konveksi</strong> kapasitas besar.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="order.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-center font-bold transition shadow-lg shadow-blue-900/50 transform hover:-translate-y-1">Konsultasi Project</a>
+                    <a href="order.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-center font-bold transition shadow-lg shadow-blue-900/50 transform hover:-translate-y-1">Konsultasi Order</a>
                     <a href="layanan.html" class="bg-white/5 border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-lg text-center font-bold transition backdrop-blur-sm">Lihat Layanan</a>
                 </div>
             </div>
             <div class="hidden lg:grid grid-cols-2 gap-4 animate-up delay-200">
                 <div class="bg-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 hover:border-blue-500/50 transition">
                     <i class="fas fa-tshirt text-3xl text-blue-400 mb-4"></i>
-                    <h3 class="text-4xl font-bold text-white">50k+</h3>
-                    <p class="text-sm text-slate-400 mt-1 uppercase tracking-wider">Produksi / Bulan</p>
+                    <h3 class="text-4xl font-bold text-white">Sehari Jadi</h3>
+                    <p class="text-sm text-slate-400 mt-1 uppercase tracking-wider">Untuk Sablon Satuan</p>
                 </div>
                 <div class="bg-white/5 backdrop-blur-xl p-8 rounded-2xl border border-white/10 hover:border-blue-500/50 transition">
                     <i class="fas fa-check-circle text-3xl text-green-400 mb-4"></i>
-                    <h3 class="text-4xl font-bold text-white">99%</h3>
-                    <p class="text-sm text-slate-400 mt-1 uppercase tracking-wider">Tingkat Presisi</p>
+                    <h3 class="text-4xl font-bold text-white">Harga Pabrik</h3>
+                    <p class="text-sm text-slate-400 mt-1 uppercase tracking-wider">Tangan Pertama</p>
                 </div>
             </div>
         </div>
@@ -93,28 +96,28 @@
     <section class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16 animate-up">
-                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Kapabilitas Produksi</h2>
+                <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Layanan Produksi</h2>
                 <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
-                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Didukung mesin modern dan tenaga ahli berpengalaman.</p>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Satu tempat untuk semua kebutuhan sandang Anda.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group animate-up delay-100">
                     <div class="w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center text-white text-2xl mb-6 group-hover:bg-blue-600 transition"><i class="fas fa-print"></i></div>
-                    <h3 class="font-bold text-xl mb-3 text-slate-900">Screen Printing</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Teknologi sablon DTF High-Gamut untuk satuan dan Plastisol Manual untuk produksi massal.</p>
-                    <a href="layanan.html" class="text-slate-900 font-bold text-sm hover:text-blue-600 transition flex items-center gap-2">Pelajari <i class="fas fa-arrow-right"></i></a>
+                    <h3 class="font-bold text-xl mb-3 text-slate-900">Jasa Sablon Kaos</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Sablon DTF untuk satuan & Plastisol untuk lusinan. Warna tajam, awet, dan presisi.</p>
+                    <a href="layanan.html" class="text-slate-900 font-bold text-sm hover:text-blue-600 transition flex items-center gap-2">Cek Detail <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group animate-up delay-200">
                     <div class="w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center text-white text-2xl mb-6 group-hover:bg-blue-600 transition"><i class="fas fa-bolt"></i></div>
-                    <h3 class="font-bold text-xl mb-3 text-slate-900">Sublimation</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Spesialis Jersey Printing (Futsal/Esport). Tinta menyatu dengan serat kain, warna tajam.</p>
-                    <a href="layanan.html" class="text-slate-900 font-bold text-sm hover:text-blue-600 transition flex items-center gap-2">Pelajari <i class="fas fa-arrow-right"></i></a>
+                    <h3 class="font-bold text-xl mb-3 text-slate-900">Jersey Printing</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Bikin Jersey Futsal, Esport, Sepeda full printing (Sublim). Bahan Dryfit premium.</p>
+                    <a href="layanan.html" class="text-slate-900 font-bold text-sm hover:text-blue-600 transition flex items-center gap-2">Cek Detail <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl transition duration-300 border border-slate-100 group animate-up delay-300">
                     <div class="w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center text-white text-2xl mb-6 group-hover:bg-blue-600 transition"><i class="fas fa-industry"></i></div>
-                    <h3 class="font-bold text-xl mb-3 text-slate-900">Garment Mfg.</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Jasa jahit CMT (Cut, Make, Trim). Produksi seragam kerja, jaket, dan kemeja dengan QC ketat.</p>
-                    <a href="layanan.html" class="text-slate-900 font-bold text-sm hover:text-blue-600 transition flex items-center gap-2">Pelajari <i class="fas fa-arrow-right"></i></a>
+                    <h3 class="font-bold text-xl mb-3 text-slate-900">Konveksi (CMT)</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">Jasa jahit seragam, kemeja, dan jaket. Kapasitas produksi besar dengan QC ketat.</p>
+                    <a href="layanan.html" class="text-slate-900 font-bold text-sm hover:text-blue-600 transition flex items-center gap-2">Cek Detail <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
