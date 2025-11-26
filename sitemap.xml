@@ -2,37 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://holycity-printing.xyz/</loc>
-    <lastmod>2025-11-24</lastmod>
+    <lastmod>2025-11-26</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://holycity-printing.xyz/index.html</loc>
-    <lastmod>2025-11-24</lastmod>
+    <lastmod>2025-11-26</lastmod>
     <priority>0.80</priority>
   </url>
+
   <url>
     <loc>https://holycity-printing.xyz/layanan.html</loc>
-    <lastmod>2025-11-24</lastmod>
+    <lastmod>2025-11-26</lastmod>
     <priority>0.90</priority>
   </url>
+
   <url>
-    <loc>https://holycity-printing.xyz/harga.html</loc>
-    <lastmod>2025-11-24</lastmod>
-    <priority>0.80</priority>
+    <loc>https://holycity-printing.xyz/jasa-sablon.html</loc>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://holycity-printing.xyz/jasa-jersey.html</loc>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://holycity-printing.xyz/jasa-jahit.html</loc>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://holycity-printing.xyz/jasa-cetak-lanyard.html</loc>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
     <loc>https://holycity-printing.xyz/marketplace.html</loc>
-    <lastmod>2025-11-24</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://holycity-printing.xyz/portfolio.html</loc>
-    <lastmod>2025-11-24</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://holycity-printing.xyz/order.html</loc>
-    <lastmod>2025-11-24</lastmod>
-    <priority>0.90</priority>
+    <lastmod>2025-11-26</lastmod>
+    <priority>0.80</priority>
   </url>
 </urlset>

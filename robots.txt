@@ -1,9 +1,10 @@
 User-agent: *
 Allow: /
 
-# Cegah Google mengindex file sistem atau admin (jika nanti ada)
+# Cegah bot mengindex folder sistem (Preventif)
 Disallow: /private/
 Disallow: /tmp/
+Disallow: /cgi-bin/
 
 # Beritahu lokasi peta situs secara eksplisit
 Sitemap: https://holycity-printing.xyz/sitemap.xml
